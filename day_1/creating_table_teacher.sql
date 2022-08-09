@@ -1,3 +1,4 @@
+--Creating table courses
 CREATE TABLE teachers (
     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     first_name varchar(25) NOT NULL,
@@ -7,8 +8,7 @@ CREATE TABLE teachers (
     salary numeric
     );
 
-DROP TABLE teachers;
-   
+--Inserting data to table teachers with id
 INSERT INTO teachers (id,first_name, last_name, school, hire_date, salary)
   VALUES (1,'Janet', 'Smith', 'MIT', '2011-10-30', 36200),
          (2,'Lee', 'Reynolds', 'MIT', '1993-05-22', 65000),
@@ -21,6 +21,7 @@ INSERT INTO teachers (id,first_name, last_name, school, hire_date, salary)
          (9,'Luis', 'Gonzales', 'Standford University', '2002-12-01', 50000),
          (10,'Frank', 'Abbers', 'Standford University', '1999-01-30', 66000);
 
+--Inserting data to table teachers without id
 INSERT INTO teachers (first_name, last_name, school, hire_date, salary)
     VALUES ('Samuel', 'Abbers', 'Standford University', '2006-01-30', 32000),
            ('Jessica', 'Abbers', 'Standford University', '2005-01-30', 33000),

@@ -23,5 +23,3 @@ Cases:
 - Case 3 : Display how many total_students per teachers
 
 - Case 4 : Display how many courses per teachers
-
-s

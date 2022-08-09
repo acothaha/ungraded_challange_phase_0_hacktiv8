@@ -1,3 +1,4 @@
+--Creating table courses
 create table courses (
 id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 name VARCHAR(25),
@@ -5,6 +6,7 @@ teachers_id INT,
 total_students INT 
 );
 
+--Inserting data to table courses
 INSERT INTO courses (name, teachers_id, total_students)
     VALUES  ('Calculus', 2, 20),
             ('Physics', 2, 10),
