@@ -1,5 +1,5 @@
 --Case 2.1
-SELECT * FROM courses 
+SELECT name, teachers.first_name, teachers.last_name FROM courses 
 LEFT JOIN teachers 
 ON courses.teachers_id = teachers.id;
 
