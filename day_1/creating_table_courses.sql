@@ -28,5 +28,6 @@ INSERT INTO courses (name, teachers_id, total_students)
             ('Physics', 13, 34),
             ('Biology', 14, 25),
             ('Calculus', 15, 20);
-           
+
+--Seeing table
 SELECT * FROM courses

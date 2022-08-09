@@ -28,5 +28,6 @@ INSERT INTO teachers (first_name, last_name, school, hire_date, salary)
            ('Tom', 'Massi', 'Harvard University', '1999-09-09', 39500),
            ('Esteban', 'Brown', 'MIT', '2007-01-30', 36000),
            ('Carlos', 'Alonso', 'Standford University', '2001-01-30', 44000);
-          
+
+--Seeing table
 SELECT * FROM teachers

@@ -1,5 +1,5 @@
 --Case 2.1
-SELECT name, teachers.first_name, teachers.last_name FROM courses 
+SELECT teachers.first_name, teachers.last_name, name as course_name FROM courses 
 LEFT JOIN teachers 
 ON courses.teachers_id = teachers.id;
 
@@ -10,13 +10,13 @@ on courses.teachers_id = teachers.id
 group by school;
 
 --Case 2.3
-SELECT teachers.first_name, teachers.last_name, sum(courses.total_students) total_student_per_teacher FROM courses
-LEFT JOIN teachers
+SELECT teachers.id ,teachers.first_name, teachers.last_name, sum(courses.total_students) total_student_per_teacher FROM courses
+RIGHT JOIN teachers
 on courses.teachers_id = teachers.id
-group by teachers.first_name;
+group by teachers.id;
 
 --Case 2.4
 SELECT teachers.first_name, teachers.last_name, COUNT(courses.teachers_id) total_course FROM courses
-LEFT JOIN teachers
+RIGHT JOIN teachers
 on courses.teachers_id = teachers.id
-group by teachers.first_name;
+group by teachers.id;
